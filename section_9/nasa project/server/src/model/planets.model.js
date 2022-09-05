@@ -34,6 +34,10 @@ function loadPalnetData (){
     })
 }
 
+function getAllPlanets(){
+    return habitablePlanets;
+}
+
 module.exports = {
     loadPalnetData,
-    planets : habitablePlanets};
+    getAllPlanets};
