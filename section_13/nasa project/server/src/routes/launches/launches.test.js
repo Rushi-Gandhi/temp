@@ -65,8 +65,8 @@ describe('Launches Api' ,()=>{
     });
     
     describe('Test DELETE/launches/:id', ()=>{
-        const idWithRecord = 1
-        const idWithoutRecord = 30;
+        const idWithRecord = 184
+        const idWithoutRecord = 999;
         test('it should respond with status code 200', async()=>{
             const response = await request(app).delete(`/v1/launches/${idWithRecord}`).expect(200)
         });

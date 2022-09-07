@@ -1,8 +1,14 @@
 const mongoose = require('mongoose');
 
 const launcherSchema = new mongoose.Schema({
-    fligthNumber: { type: Number, require: true },
-    mission: { type: String, require: true },
+    flightNumber: { type: Number, require: true },
+    mission: {
+
+        type: String,
+
+        required: true
+
+    },
     rocket: { type: String, require: true },
     target: { type: String},
     launchDate: { type: Date, require: true },
