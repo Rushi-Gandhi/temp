@@ -1,0 +1,54 @@
+# query{
+#   products {
+#     id
+#     description
+#     price
+#     reviews {
+#       rating
+#       comment
+#     }
+   
+#   }
+#   ProductsByPrice(min : 11.22 , max : 22.21){
+#     description
+#     price
+    
+#   }
+#   productById(id :3){
+#     id
+#   }
+  
+#   orders {
+#     date
+#     subtotal
+#     items {
+#       product {
+#         id
+#         description
+#         price
+#         reviews {
+#           rating
+#           comment
+#         }
+#       }
+#     }
+#   }
+#},
+mutation{
+  # addNewProduct(id:4 , description : "hello" ,price : 777){
+  #   id , 
+  #   description , 
+  #   price ,
+  #   reviews{
+  #     rating 
+  #     comment
+  #   }
+  # }
+  a :addNewReview(id : 1 , rating : 7 , comment : "good"){
+    rating
+  }
+  b :addNewReview(id : 1 , rating : 7 , comment : "good"){
+    rating
+  }
+  
+}

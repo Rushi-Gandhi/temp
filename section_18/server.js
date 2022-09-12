@@ -10,14 +10,14 @@ const schema = buildSchema(`
     }
 `);
 
-const root = {
-    description : 'Red Shoe' ,
-    price : 77.18
-}
+// const root = {
+//     description : 'Red Shoe' ,
+//     price : 77.18
+// }
 
 app.use('/graphql',graphqlHTTP({
     schema : schema,
-    rootValue : root,
+   // rootValue : root,
     graphiql :  true
 }))
 
